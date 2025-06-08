@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@portfolio/types": ["packages/shared-types/src"],
+      "@portfolio/types/*": ["packages/shared-types/src/*"],
+      "@portfolio/eslint-config": ["packages/eslint-config/src"],
+      "@portfolio/eslint-config/*": ["packages/eslint-config/src/*"]
+    }
+  },
+  "references": [
+    { "path": "./apps/backend" },
+    { "path": "./apps/frontend" },
+    { "path": "./packages/shared-types" },
+    { "path": "./packages/eslint-config" }
+  ],
+  "files": [],
+  "include": [],
+  "exclude": ["node_modules", "dist", "coverage", ".turbo"]
+}

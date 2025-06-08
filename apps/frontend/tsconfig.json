@@ -1,0 +1,20 @@
+{
+  "extends": "@portfolio/ts-config/web",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["src/*"],
+      "~icons/*": ["src/assets/icons/*"],
+      "~layouts/*": ["src/components/layouts/*"],
+      "~forms/*": ["src/components/forms/*"],
+      "~ui/*": ["src/components/ui/*"],
+      "~hooks/*": ["src/hooks/*"],
+      "~utils/*": ["src/utils/*"],
+      "@portfolio/types": ["../../packages/shared-types/src"],
+      "@portfolio/types/*": ["../../packages/shared-types/src/*"]
+    }
+  },
+  "include": ["src/**/*", "*.ts", "*.tsx", "**/*.astro", "**/*.d.ts", "**/*.spec.tsx"],
+  "exclude": ["node_modules", "dist", "coverage", ".turbo", ".astro"]
+}

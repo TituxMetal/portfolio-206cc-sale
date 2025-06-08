@@ -1,0 +1,62 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portfolio for the sale of my 206 CC",
+  "keywords": [
+    "monorepo",
+    "turbo",
+    "astro",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "Titux Metal",
+  "license": "MIT",
+  "packageManager": "yarn@4.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "start": "turbo run start",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:watch": "turbo run test:watch --parallel",
+    "lint": "turbo run lint",
+    "lint:check": "turbo run lint:check",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "turbo run clean && rm -rf .turbo",
+    "reset": "yarn clean && rm -rf node_modules && yarn install",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.15.1",
+    "yarn": ">=4.9.2"
+  },
+  "lint-staged": {
+    "apps/frontend/**/*.{ts,tsx,astro}": [
+      "turbo run type-check lint format --filter=@portfolio/frontend"
+    ],
+    "packages/**/*.{ts,js}": [
+      "turbo run type-check lint format --filter=@portfolio/*"
+    ],
+    "**/*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}
