@@ -3,17 +3,20 @@ import '~/styles/global.css'
 import Footer from './Footer.astro'
 import { NavBar } from './NavBar'
 
-const { title } = Astro.props
+const { description, title } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='fr'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
-    <title>Fullstack Auth System {title && `| ${title}`}</title>
+    <title>{title}</title>
+    <meta name='description' content={description} />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:image' content='/' />
   </head>
   <body class='min-h-screen'>
     <NavBar server:defer client:load />

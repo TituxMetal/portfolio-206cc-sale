@@ -2,24 +2,14 @@
 import MainLayout from '~layouts/MainLayout.astro'
 import { Welcome } from '~ui/Welcome'
 
-const fakeUser = {
-  id: '1',
-  email: 'john.doe@example.com',
-  createdAt: new Date(),
-  updatedAt: new Date()
-}
-
-const users = await Promise.resolve([fakeUser])
-const user = users[0] ?? fakeUser
-
-const title = 'Basic Home Page'
+const title = `Peugeot 206cc de 2006 à vendre, dans l'état`
 const pageDescription = `
-This is a robust example of a fullstack authentication system using Monorepo architecture with NestJs as backend, Astro as frontend, shared types and configuration.
+Peugeot 206cc 1.6L 2006, 211 000 km, ligne inox, pack sport, embrayage neuf.
 `
 ---
 
-<MainLayout title={title}>
-  <Welcome server:defer client:load title={title} pageDescription={pageDescription} user={user}>
-    <p>It uses React integration with Astro and TailwindCSS for styling.</p>
+<MainLayout title={title} description={pageDescription}>
+  <Welcome client:load title={title} pageDescription={pageDescription}>
+    <p>À vendre, dans l'état, 2 000 € à débattre, pour un bon bricoleur !</p>
   </Welcome>
 </MainLayout>

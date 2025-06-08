@@ -1,4 +1,4 @@
-import { VscAccount, VscHome, VscSignIn, VscSignOut } from 'react-icons/vsc'
+import { FaCamera, FaCar, FaHome, FaMailBulk, FaStar, FaTools } from 'react-icons/fa'
 
 export const NavBar = () => {
   return (
@@ -7,26 +7,38 @@ export const NavBar = () => {
         <ul className='flex w-full items-center justify-around'>
           <li>
             <a href='/' className='navLink'>
-              <VscHome className='icon' aria-label='Home' />
-              Home
+              <FaHome className='icon' aria-label='Home' />
+              Accueil
             </a>
           </li>
           <li>
-            <a href='/profile' className='navLink'>
-              <VscAccount className='icon' aria-label='Profile' />
-              Titux Metal
+            <a href='#details' className='navLink'>
+              <FaCar className='icon' aria-label='Details' />
+              Détails
             </a>
           </li>
           <li>
-            <a href='/logout' className='navLink'>
-              <VscSignOut className='icon' aria-label='Logout' />
-              Logout
+            <a href='#features' className='navLink'>
+              <FaTools className='icon' aria-label='Features' />
+              Caractéristiques
             </a>
           </li>
           <li>
-            <a href='/auth' className='navLink'>
-              <VscSignIn className='icon' aria-label='Authentication' />
-              Auth
+            <a href='#gallery' className='navLink'>
+              <FaCamera className='icon' aria-label='Gallery' />
+              Galerie
+            </a>
+          </li>
+          <li>
+            <a href='#why-buy' className='navLink'>
+              <FaStar className='icon' aria-label='Why Buy' />
+              Pourquoi acheter ?
+            </a>
+          </li>
+          <li>
+            <a href='#contact' className='navLink'>
+              <FaMailBulk className='icon' aria-label='Contact' />
+              Contactez-moi
             </a>
           </li>
         </ul>
