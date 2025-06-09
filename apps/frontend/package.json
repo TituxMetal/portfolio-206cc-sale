@@ -31,6 +31,7 @@
     "@portfolio/eslint-config": "workspace:*",
     "@portfolio/ts-config": "workspace:*",
     "@portfolio/types": "workspace:*",
+    "@tailwindcss/typography": "~0.5.16",
     "@tailwindcss/vite": "^4.1.8",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
