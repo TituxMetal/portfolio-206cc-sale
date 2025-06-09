@@ -1,5 +1,6 @@
 ---
 import MainLayout from '~layouts/MainLayout.astro'
+import { CarDetails } from '~sections/CarDetails'
 import { Hero } from '~sections/Hero'
 
 const title = `Peugeot 206cc de 2006 à vendre, dans l'état`
@@ -10,4 +11,5 @@ Peugeot 206cc 1.6L 2006, 211 000 km, ligne inox, pack sport, embrayage neuf.
 
 <MainLayout title={title} description={pageDescription}>
   <Hero />
+  <CarDetails client:load />
 </MainLayout>
