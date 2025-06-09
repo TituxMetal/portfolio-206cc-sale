@@ -7,7 +7,9 @@
   "scripts": {
     "build": "astro build",
     "dev": "astro dev",
-    "start": "astro preview",
+    "start": "node dist/server/entry.mjs",
+    "docker:build": "docker build -f ../../docker/Dockerfile.frontend -t lgdweb/206cc-portfolio:prod ../../",
+    "docker:push": "docker push lgdweb/206cc-portfolio:prod",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
     "test": "vitest run",

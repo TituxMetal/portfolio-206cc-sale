@@ -33,6 +33,9 @@
     "reset": "yarn clean && rm -rf node_modules && yarn install",
     "prepare": "husky"
   },
+  "nohoist": [
+    "@portfolio/frontend/**"
+  ],
   "devDependencies": {
     "@types/node": "^22.15.29",
     "eslint": "^9.28.0",

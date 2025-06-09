@@ -1,0 +1,16 @@
+node_modules
+dist
+.astro
+.git
+*.md
+.env
+.env.example
+.gitignore
+.dockerignore
+*.log
+test
+tests
+coverage
+.yarn
+.yarnrc.yml
+src/**/*.spec.*
