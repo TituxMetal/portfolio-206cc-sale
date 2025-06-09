@@ -8,6 +8,7 @@
       "~icons/*": ["src/assets/icons/*"],
       "~layouts/*": ["src/components/layouts/*"],
       "~forms/*": ["src/components/forms/*"],
+      "~sections/*": ["src/components/sections/*"],
       "~ui/*": ["src/components/ui/*"],
       "~hooks/*": ["src/hooks/*"],
       "~utils/*": ["src/utils/*"],

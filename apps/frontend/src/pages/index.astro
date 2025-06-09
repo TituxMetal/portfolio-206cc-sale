@@ -1,6 +1,6 @@
 ---
 import MainLayout from '~layouts/MainLayout.astro'
-import { Welcome } from '~ui/Welcome'
+import { Hero } from '~sections/Hero'
 
 const title = `Peugeot 206cc de 2006 à vendre, dans l'état`
 const pageDescription = `
@@ -9,7 +9,5 @@ Peugeot 206cc 1.6L 2006, 211 000 km, ligne inox, pack sport, embrayage neuf.
 ---
 
 <MainLayout title={title} description={pageDescription}>
-  <Welcome client:load title={title} pageDescription={pageDescription}>
-    <p>À vendre, dans l'état, 2 000 € à débattre, pour un bon bricoleur !</p>
-  </Welcome>
+  <Hero />
 </MainLayout>
