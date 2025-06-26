@@ -3,15 +3,15 @@ export const Hero = () => {
     <section className='relative my-6 overflow-hidden rounded-lg bg-zinc-800'>
       <img
         src='https://cdn.lgdweb.fr/img2.jpg?v=1'
-        alt='Peugeot 206cc 2006'
+        alt='Peugeot 206 CC 2006'
         className='h-[50vh] w-full object-cover'
       />
       <div className='absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-zinc-950/60 text-center'>
         <h1 className='text-3xl font-bold text-zinc-100 md:text-4xl'>
-          Peugeot 206cc 1.6L 2006 - 2 000 € à discuter
+          Peugeot 206 CC 1.6L 2006 - 1800 € négociable
         </h1>
-        <p className='mt-2 text-lg text-zinc-300 md:text-xl'>
-          Cabriolet fun, vendu en l'état, pour bricoleur passionné !
+        <p className='mt-2 text-lg font-semibold text-zinc-300 md:text-xl'>
+          Un cabriolet pour bricoleurs prêts à retrousser leurs manches
         </p>
         <a
           href='#contact'
