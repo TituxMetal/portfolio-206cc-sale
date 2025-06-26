@@ -1,27 +1,27 @@
-export const WhyBuy = () => {
-  return (
-    <section id='why-buy' className='my-6 rounded-lg bg-zinc-800 py-12'>
-      <div className='container mx-auto px-4'>
-        <h2 className='mb-6 text-2xl font-bold text-zinc-100'>Pourquoi acheter cette 206cc ?</h2>
-        <div className='prose prose-invert text-zinc-300'>
-          <p>
-            Cette Peugeot 206cc cabriolet est un <strong>projet idéal pour un bricoleur passionné</strong> ! Avec son <strong>embrayage neuf (2 300 € en 2024)</strong>, sa <strong>ligne d'échappement inox</strong>, son <strong>train arrière refait</strong>, et
-            un <strong>CT valide jusqu'à février 2025</strong>, elle est prête à rouler. Son look <strong>pack sport</strong> et ses <strong>jantes 17"</strong> en font une voiture fun
-            et attractive.
-          </p>
-          <p>
-            <strong>Transparence totale</strong> : quelques défauts (pneus avant, carrosserie,
-            joints) sont à prévoir, mais pour <strong>350-600 € de travaux DIY</strong>, elle peut
-            être retapée pour une revente à <strong>3 000-3 500 €</strong>, soit un bénéfice de 1
-            400-2 000 €. Parfaite pour un passionné dans le <strong>Haut-Rhin</strong> cherchant un
-            projet gagnant-gagnant !
-          </p>
-          <p>
-            <strong>Envie d'essayer ?</strong> Contactez-moi pour une visite et un essai, et
-            repartez avec une 206cc pleine de potentiel !
-          </p>
-        </div>
+export const WhyBuy = () => (
+  <section id='why-buy' className='my-6 rounded-lg bg-zinc-800 py-12'>
+    <div className='container mx-auto px-4'>
+      <h2 className='mb-6 text-3xl font-bold text-zinc-100'>Pourquoi choisir cette 206cc ?</h2>
+      <div className='prose prose-invert text-zinc-300'>
+        <p>
+          Cette 206 CC de 2006 est un bon projet pour un bricoleur, avec ses jantes 17" et sa ligne
+          inox Friedrich qui lui donnent du cachet.
+        </p>
+        <p>
+          Soyons clairs : la carrosserie a vécu, les pneus avant et d'autres petits points à
+          vérifier demandent de l'attention. Quelques réparations abordables, comme des pneus avant
+          (~120 €), un kit de joints pour le toit (~20 €), ou des coupelles d'amortisseurs (~50 €),
+          suffisent pour lui redonner vie. Cette 206 CC est faite pour un passionné prêt à se
+          retrousser les manches pour lui redonner de l'éclat.
+        </p>
+        <p>
+          En investissant <strong>environ 300 à 800 € en pièces</strong> et{' '}
+          <strong>un peu d'huile de coude</strong>, ce véhicule peut atteindre une valeur de{' '}
+          <strong>revente autour des 3 000 €</strong>, offrant un bénéfice intéressant ou un
+          cabriolet sympa à rouler. Cette 206 CC attend un{' '}
+          <strong>passionné de la clé de 13</strong> pour écrire la suite de son histoire.
+        </p>
       </div>
-    </section>
-  )
-}
+    </div>
+  </section>
+)
