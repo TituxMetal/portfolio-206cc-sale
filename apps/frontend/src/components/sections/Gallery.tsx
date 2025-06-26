@@ -20,7 +20,9 @@ export const Gallery = () => {
             />
           ))}
         </div>
-        <p className='mt-4 text-center text-zinc-400'>Plus de photos disponibles sur demande !</p>
+        <p className='mt-4 text-center text-zinc-400'>
+          Envie de voir plus ? Demande-moi, j'ai d'autres photos sous le coude !
+        </p>
       </div>
     </section>
   )
