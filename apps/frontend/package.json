@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "astro build",
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "start": "node dist/server/entry.mjs",
     "docker:build": "docker build -f ../../docker/Dockerfile.frontend -t lgdweb/206cc-portfolio:prod ../../",
     "docker:push": "docker push lgdweb/206cc-portfolio:prod",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@astrojs/node": "^9.2.2",
     "@astrojs/react": "^4.3.0",
-    "astro": "^5.8.1",
+    "astro": "^5.10.1",
     "astro-icon": "^1.1.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -32,18 +32,18 @@
     "@portfolio/ts-config": "workspace:*",
     "@portfolio/types": "workspace:*",
     "@tailwindcss/typography": "~0.5.16",
-    "@tailwindcss/vite": "^4.1.8",
+    "@tailwindcss/vite": "^4.1.11",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.5.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
     "@vitest/coverage-v8": "^3.2.0",
     "jsdom": "^26.1.0",
-    "tailwindcss": "^4.1.8",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
-    "vitest": "^3.2.0"
+    "vitest": "^3.2.1"
   }
 }
