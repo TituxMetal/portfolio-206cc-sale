@@ -1,16 +1,16 @@
 export const WhyBuy = () => (
-  <section id='why-buy' className='my-6 rounded-lg bg-zinc-800 py-12'>
-    <div className='container mx-auto px-4'>
-      <h2 className='mb-6 text-3xl font-bold text-zinc-100'>Pourquoi choisir cette 206cc ?</h2>
-      <div className='prose prose-invert text-zinc-300'>
+  <section id='why-buy' className='section'>
+    <div className='container mx-auto p-4 sm:p-6'>
+      <h2 className='mb-6 text-3xl font-bold text-zinc-100'>Pourquoi la choisir ?</h2>
+      <div className='prose prose-invert max-w-none text-zinc-300'>
         <p>
           Cette 206 CC de 2006 est un bon projet pour un bricoleur, avec ses jantes 17" et sa ligne
           inox Friedrich qui lui donnent du cachet.
         </p>
         <p>
           Soyons clairs : la carrosserie a vécu, les pneus avant et d'autres petits points à
-          vérifier demandent de l'attention. Quelques réparations abordables, comme des pneus avant
-          (~120 €), un kit de joints pour le toit (~20 €), ou des coupelles d'amortisseurs (~50 €),
+          vérifier demandent de l'attention. Quelques réparations abordables, comme des pneus (~120
+          €), un kit de joints pour le toit (~20 €), ou des coupelles d'amortisseurs (~50 €),
           suffisent pour lui redonner vie. Cette 206 CC est faite pour un passionné prêt à se
           retrousser les manches pour lui redonner de l'éclat.
         </p>
