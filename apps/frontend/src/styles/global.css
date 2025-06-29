@@ -9,6 +9,8 @@
 
   html {
     @apply h-full overflow-y-scroll;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Offset for fixed top navigation */
   }
 
   body {
@@ -21,6 +23,10 @@
     html {
       color-scheme: dark;
     }
+  }
+
+  .prose p {
+    @apply py-1;
   }
 
   /* Optimize rendering performance */
@@ -39,8 +45,16 @@
     @apply inline size-5;
   }
 
+  .list-icon {
+    @apply mt-0.5 mr-3 size-6 flex-shrink-0;
+  }
+
+  .section {
+    @apply relative my-6 overflow-hidden bg-zinc-800 md:mx-6 md:rounded-lg;
+  }
+
   .navLink {
-    @apply flex flex-col items-center gap-2 hover:text-amber-200 lg:flex-row;
+    @apply flex flex-col items-center gap-1 px-1 py-1 text-xs font-medium text-sky-200 transition-colors hover:text-amber-200 sm:gap-2 sm:px-2 md:text-sm lg:flex-row;
   }
 
   .link {
