@@ -4,6 +4,7 @@ import Footer from './Footer.astro'
 import { NavBar } from './NavBar'
 
 const { description, title } = Astro.props
+const isProduction = import.meta.env.PROD
 ---
 
 <!doctype html>
@@ -17,10 +18,23 @@ const { description, title } = Astro.props
     <meta property='og:title' content={title} />
     <meta property='og:description' content={description} />
     <meta property='og:image' content='/' />
+
+    {
+      isProduction && (
+        <script
+          is:inline
+          defer
+          data-domain='206cc.lgdweb.fr'
+          src='https://analitycs.tuxlab.fr/js/script.hash.outbound-links.js'
+        />
+      )
+    }
   </head>
   <body class='min-h-screen'>
     <NavBar server:defer client:load />
-    <main class='mx-auto flex w-full max-w-screen-xl flex-1 flex-col py-6'>
+    <main
+      class='mx-auto mt-5 flex w-full max-w-screen-lg flex-1 flex-col py-6 sm:mt-16 md:mt-18 lg:mt-16'
+    >
       <slot />
     </main>
     <Footer />
